@@ -1,0 +1,366 @@
+:root {
+	--PaleViolet /*(sub-heading at the top of the app UI)*/: hsl(276, 100%, 81%);
+	--ModerateViolet /*(chat on the left)*/: hsl(276, 55%, 52%);
+	--DesaturatedDarkViolet /*(chat on the right)*/: hsl(271, 15%, 43%);
+	--GrayishBlue /*(placeholder text)*/: hsl(206, 6%, 79%);
+	--VeryDarkDesaturatedViolet /*(main heading)*/: hsl(271, 36%, 24%);
+	--DarkGrayishViolet /*(paragraph)*/: hsl(270, 7%, 64%);
+	--LightMagenta: hsl(293, 100%, 63%);
+	--LightViolet: hsl(264, 100%, 61%);
+	--White: hsl(0, 0%, 100%);
+	--LightGrayishViolet /*(app background)*/: hsl(270, 20%, 96%);
+	--VeryDarkDesaturatedViolet /*(submit button background)*/: hsl(271, 36%, 24%);
+	--VeryLightMagenta /*(radio button outline)*/: hsl(289, 100%, 72%);
+}
+
+body {
+	margin: 0;
+	background: var(--LightGrayishViolet);
+	font-family: 'Rubik', sans-serif;
+}
+
+#left-one {
+	width: 400px;
+	height: 550px;
+	background: var(--ModerateViolet);
+	position: absolute;
+	z-index: -1;
+}
+
+#left-two {
+	width: 400px;
+	height: 350px;
+	background: var(--ModerateViolet);
+	position: absolute;
+	top: 330px;
+    margin-left: -30px;
+	z-index: -1;
+	border-radius: 100%;
+}
+
+#right-one {
+	background: hsl(206, 6%, 94%);
+	width: 350px;
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#right-two {
+	background: hsl(206, 6%, 94%);
+	width: 350px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+#right-three {
+	background: hsl(206, 6%, 94%);
+	width: 350px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+    z-index: -1;
+	border-top-left-radius: 200px;
+}
+
+#mobile {
+	background-color: hsl(270, 20%, 96%);
+	width: 270px;
+	height: 563px;
+	position: absolute;
+	top: 110px;
+	left: 340px;
+	border-radius: 30px;
+	border-width: 10px;
+	border-color: white;
+	border-style: solid ;
+	box-shadow: 5px 15px 60px rgba(0, 0, 0, 0.1);
+}
+
+#top {
+	background-color: hsl(0, 0%, 100%);
+	width: 150px;
+	height: 20px;
+	position: relative;
+	z-index: 3;
+	margin-left: 60px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#top-piece {
+	background: linear-gradient(270deg, var(--LightMagenta), var(--LightViolet));
+	width: 96.2%;
+	height: 15%;
+	margin-top: -20px;
+	position: relative;
+	border-radius: 20px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	z-index: 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 10px;
+}
+
+#piece-left {
+	margin-top: 20px;
+}
+
+#avatar {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border-width: 2px;
+	border-color: white;
+	border-style: solid ;
+	margin-top: 15px;
+}
+
+#align {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#available {
+	margin-top: -20px;
+	font-size: 10px;
+	color: hsl(270, 7%, 72%);
+}
+
+#settings {
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+
+.dots {
+	background-color: hsl(270, 20%, 90%);
+	width: 2px;
+	height: 2px;
+	margin-bottom: 2px;
+}
+
+.dog {
+	width: 45px;
+	border-radius: 10px;
+}
+
+#dog-pics {
+	margin-left: 115px;
+	margin-top: 20px;
+}
+
+button {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: none;
+	background: var(--VeryDarkDesaturatedViolet);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 120px;
+}
+
+#typing {
+	width: 300px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#booking {
+	width: 500px;
+	position: absolute;
+	top: 280px;
+	right: 300px;
+}
+
+.text {
+	font-size: 10px;
+	background-color: hsl(213, 15%, 88%);
+	color: hsl(293, 73%, 55%);
+	width: 65%;
+	height: 30px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 7px;
+	border-radius: 10px;
+	border-bottom-left-radius: 4px;
+}
+
+#paragraph-color-right-one {
+	font-size: 10px;
+	width: 45%;
+	height: 30px;
+	margin: 10px 0 0 128px;
+	padding: 5px;
+	border-radius: 10px;
+	border-bottom-right-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--White);
+	box-shadow: 4px 4px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+#paragraph-color-right-two {
+	font-size: 10px;
+	width: 40%;
+	height: 25px;
+	margin: 10px 0 0 154px;
+	border-radius: 10px;
+	border-bottom-right-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--White);
+	box-shadow: 4px 4px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+#text-end {
+	font-size: 10px;
+	background-color: hsl(213, 15%, 88%);
+	color: hsl(293, 73%, 55%);
+	width: 50%;
+	height: 40px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border-radius: 10px;
+	border-bottom-left-radius: 4px;
+	margin-top: 15px;
+}
+
+.price {
+	font-size: 10px;
+	color: hsl(270, 20%, 96%);
+	width: 60%;
+	height: 25px;
+	border-radius: 10px;
+	border-bottom-left-radius: 4px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: linear-gradient(90deg, var(--LightMagenta), var(--LightViolet));
+	padding: 5px;
+	margin-bottom: 8px;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+#price-min {
+	font-size: 14px;
+	color: white;
+	margin-left: 40px;
+}
+
+#price-hour {
+	font-size: 14px;
+	margin-left: 60px;
+}
+
+h4 {
+	color: hsl(270, 20%, 94%);
+	font-size: 14px;
+}
+
+.circle {
+	margin-right: 5px;
+}
+
+#typing {
+	background-color: white;
+	width: 86%;
+	height: 7%;
+	border-radius: 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+#type-font {
+	font-size: 10px;
+	color: hsl(270, 20%, 80%);
+}
+
+h1 {
+	font-size: 38px;
+	font-weight: 500;
+	color: var(--VeryDarkDesaturatedViolet);
+}
+
+#book {
+	color: var(--DarkGrayishViolet);
+	font-weight: 400;
+	font-size: 18px;
+}
+
+@media only screen and (max-width:375px) {
+
+	#right-one, #right-two, #right-three {
+		width: 0;
+	}
+
+	#left-one {
+		width: 80%;
+		height: 74%;
+	}
+
+	#left-two {
+		width: 600px;
+		margin-left: -350px;
+		margin-top: -100px;
+	}
+
+	#mobile {
+		position: absolute;
+		top: 50px;
+		left: 150px;
+	}
+
+	#booking {
+		position: absolute;
+		top: 700px;
+		left: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 500px;
+		height: 400px;
+		margin-top: -100px;
+	}
+
+	h1 {
+		margin-left: -100px;
+	}
+
+	#book {
+		width: 300px;
+		height: 100px;
+		padding-right: 80px;
+	}
+
+	#top {
+		margin-top: -1px;
+	}
+}
